@@ -82,4 +82,22 @@ public class MainTest extends TestCase {
 
     assertEquals(Arrays.toString(c), Arrays.toString(b));
   }
+
+  public void testTwoSumCorrectFail3() {
+    int[] a = {1};
+    int sum = 1;
+    int[] b = Main.twoSum(a, sum);
+    int[] c ={0};
+
+    assertEquals(Arrays.toString(c), Arrays.toString(b));
+  }
+
+  public void testTwoSumCorrectFail4() {
+    int[] a = {};
+    int sum = 1;
+    int[] b = Main.twoSum(a, sum);
+    int[] c ={0};
+
+    assertEquals(Arrays.toString(c), Arrays.toString(b));
+  }
 }
